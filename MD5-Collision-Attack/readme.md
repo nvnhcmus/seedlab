@@ -274,8 +274,8 @@ tail -c +320 suffix > suffix_post
 Construct the final executable programs and make them executable:
 
 ```
-cat s1 suffix_pre P suffix_post > benign
-cat s2 suffix_pre P suffix_post > evil
+cat prefix P suffix_pre P suffix_post > benign
+catprefix Q suffix_pre P suffix_post > evil
 chmod u+x benign evil
 ```
 
