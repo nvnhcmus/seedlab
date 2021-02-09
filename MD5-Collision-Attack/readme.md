@@ -275,7 +275,7 @@ Construct the final executable programs and make them executable:
 
 ```
 cat prefix P suffix_pre P suffix_post > benign
-catprefix Q suffix_pre P suffix_post > evil
+cat prefix Q suffix_pre P suffix_post > evil
 chmod u+x benign evil
 ```
 
